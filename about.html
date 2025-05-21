@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Lielt Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-container">
+      <img src="logo.jpg" class="cu" alt="logo">
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Hello! I'm <strong>Lielt</strong>, a passionate Computer Science student in my third year at Gondar University.</p>
+        <p>I love solving problems with code, building creative projects, and learning new technologies like HTML, CSS, and JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("nav-menu");
+
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  </script>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2017 Lielt Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
